@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Replaced Elements in HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .preview {
+      max-width: 200px;
+      max-height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Replaced Elements in HTML</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Element</th>
+        <th>Example Code</th>
+        <th>Description</th>
+        <th>Preview</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td><code>&lt;img src="https://via.placeholder.com/150" alt="Sample image"&gt;</code></td>
+        <td>Displays an image from an external source.</td>
+        <td><img src="https://via.placeholder.com/150" alt="Sample image" class="preview"></td>
+      </tr>
+      <tr>
+        <td>&lt;video&gt;</td>
+        <td><code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code></td>
+        <td>Embeds a video player (local video required).</td>
+        <td><video width="200" controls><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">Video not supported</video></td>
+      </tr>
+      <tr>
+        <td>&lt;audio&gt;</td>
+        <td><code>&lt;audio src="sound.mp3" controls&gt;&lt;/audio&gt;</code></td>
+        <td>Embeds an audio player (local audio required).</td>
+        <td><audio controls><source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">Audio not supported</audio></td>
+      </tr>
+      <tr>
+        <td>&lt;iframe&gt;</td>
+        <td><code>&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</code></td>
+        <td>Embeds another webpage.</td>
+        <td><iframe src="https://www.example.com" width="200" height="100"></iframe></td>
+      </tr>
+      <tr>
+        <td>&lt;embed&gt;</td>
+        <td><code>&lt;embed src="file.pdf" width="200"&gt;</code></td>
+        <td>Embeds external resources like PDF or multimedia.</td>
+        <td><embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="200" height="100" type="application/pdf"></td>
+      </tr>
+      <tr>
+        <td>&lt;object&gt;</td>
+        <td><code>&lt;object data="file.swf" type="..."&gt;&lt;/object&gt;</code></td>
+        <td>Embeds multimedia or documents with fallback.</td>
+        <td><object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="200" height="100">PDF not supported</object></td>
+      </tr>
+      <tr>
+        <td>&lt;canvas&gt;</td>
+        <td><code>&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</code></td>
+        <td>Used to draw graphics with JavaScript.</td>
+        <td><canvas id="myCanvas" width="200" height="100" style="border:1px solid #ccc;"></canvas></td>
+      </tr>
+      <tr>
+        <td>&lt;input type="image"&gt;</td>
+        <td><code>&lt;input type="image" src="btn.png"&gt;</code></td>
+        <td>Displays an image as a submit button.</td>
+        <td><input type="image" src="https://via.placeholder.com/100x40?text=Submit" alt="Submit button" class="preview"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    // Simple canvas drawing
+    const canvas = document.getElementById('myCanvas');
+    if (canvas.getContext) {
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#4CAF50';
+      ctx.fillRect(20, 20, 150, 50);
+      ctx.font = '16px sans-serif';
+      ctx.fillStyle = '#fff';
+      ctx.fillText('Canvas Box', 45, 50);
+    }
+  </script>
+</body>
+</html>
