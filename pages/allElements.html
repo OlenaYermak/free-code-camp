@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Elements Showcase">
+    <title>All HTML Elements</title>
+    <base href="/">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        section { margin-bottom: 40px; }
+        h2 { color: darkblue; }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Button clicked!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>HTML Elements Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#text">Text Elements</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#semantic">Semantic Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="text">
+        <h2>Text Elements</h2>
+        <p>This is a <strong>paragraph</strong> with <em>emphasis</em>, <mark>marked</mark>, <small>small text</small>, <del>deleted</del>, and <ins>inserted</ins> text.</p>
+        <blockquote cite="https://example.com">A blockquote example</blockquote>
+        <q cite="https://example.com">A short quote</q>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        <address>123 Example St, City</address>
+        <cite>— Some Author</cite>
+        <code>&lt;div&gt;</code>
+        <pre><code>&lt;html&gt;\n  &lt;head&gt;&lt;/head&gt;\n&lt;/html&gt;</code></pre>
+        <bdo dir="rtl">Reversed text</bdo>
+    </section>
+
+    <section id="forms">
+        <h2>Form Elements</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="120"><br><br>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe</label><br><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+            <input type="range" min="0" max="10">
+            <input type="color" name="favcolor">
+            <input type="date" name="bday">
+            <input type="file" name="upload"><br><br>
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </select>
+            <textarea name="message">Enter message here...</textarea><br><br>
+            <button type="button" onclick="showAlert()">Click Me</button>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="media">
+        <h2>Media Elements</h2>
+        <img src="https://via.placeholder.com/150" alt="Placeholder image" width="150" height="150">
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <video controls width="250">
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <figure>
+            <img src="https://via.placeholder.com/100" alt="Figure image">
+            <figcaption>Example of figure caption</figcaption>
+        </figure>
+    </section>
+
+    <section id="tables">
+        <h2>Tables</h2>
+        <table border="1">
+            <caption>Sample Table</caption>
+            <thead>
+                <tr><th>Name</th><th>Age</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Alice</td><td>30</td></tr>
+                <tr><td>Bob</td><td>25</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">Footer</td></tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section id="semantic">
+        <h2>Semantic Elements</h2>
+        <article>
+            <h3>Article Title</h3>
+            <p>Content of the article...</p>
+        </article>
+        <aside>Side content</aside>
+        <details>
+            <summary>Click to expand</summary>
+            <p>More information...</p>
+        </details>
+        <dialog open>This is a dialog</dialog>
+        <figure>
+            <img src="https://via.placeholder.com/80" alt="">
+            <figcaption>A figure caption</figcaption>
+        </figure>
+        <footer>
+            <p>&copy; 2025 Example Co.</p>
+        </footer>
+    </section>
+
+    <script>
+        console.log("All HTML elements loaded.");
+    </script>
+</body>
+</html>
