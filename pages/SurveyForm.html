@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+<h1 id="title">Remote Work Experience Survey</h1>
+<p id="description">Thank you for taking the time to share your experience with remote work. Your insights will help us shape better remote collaboration practices.</p>
+<form id="survey-form">
+  <fieldset>
+  <label id="name-label" for="name">Full Name</label>
+  <input required id="name" name="full-name" type="text" placeholder="Enter your full name"/>
+
+  <label id="email-label" for="email">Email</label>
+  <input required id="email" name="email" type="email" placeholder="Enter your email"/>
+  
+  <label id="number-label" for="number">Years of Remote Work Experience (optional)</label>
+  <input id="number" name="years" type="number" min="1" max="80" placeholder="Enter number of years" />
+</fieldset>
+
+<label for="dropdown">What best describes your current working arrangement?</label>
+ <select id="dropdown" name="work-mode">
+   <option value="fully-remote">Fully remote</option>
+   <option value="hybrid">Hybrid (remote + office)</option>
+   <option value="in-office">In-office</option>
+   <option value="freelancer">Freelancer</option>
+   <option value="unemployed">Unemployed</option>
+   </select> 
+
+<fieldset>
+  <legend>Do you feel more productive when working remotely?</legend>
+   <label for="absolutely">Yes, absolutely</label>
+   <input id="absolutely" type="radio" name="feel" value="absolutely"/>
+   <label for="somewhat">Somewhat</label>
+   <input id="somewhat" type="radio" name="feel" value="somewhat"/>
+   <label for="not">Not really</label>
+   <input id="not" type="radio" name="feel" value="not"/>
+   </fieldset>
+
+   <label for="tool">Which tool do you rely on most for remote collaboration?</label>
+
+   <select id="tool" name="tool">
+     <option value="slack">Slack</option>
+   <option value="zoom">Zoom</option>
+   <option value="microsoft-teams">Microsoft Teams</option>
+   <option value="google-meet">Google Meet</option>
+   <option value="notion" selected>Notion</option>
+   <option value="other">Other</option>
+   </select>
+   
+   <fieldset>
+     <legend>Which areas of remote work could be improved? (Check all that apply)</legend>
+     <label for="communication">Communication</label>
+     <input type="checkbox" id="communication" name="communication" value="communication"/>
+
+     <label for="project-management">Project Management</label>
+     <input type="checkbox" id="project-management" name="project-management" value="project-management"/>
+
+     <label for="work-life-balance">Work-life Balance</label>
+     <input type="checkbox"
+     id="work-life-balance"
+     name="work-life-balance"
+     value="work-life-balance"/>
+
+     <label for="team-building">Team Building</label>
+     <input type="checkbox"
+     id="team-building"
+     name="team-building"
+     value="team-building"/>
+
+     <label for="tech-support">Tech Support</label>
+     <input type="checkbox"
+     id="tech-support"
+     name="tech-support"
+     value="tech-support"/>
+
+     <label for="onboarding-prosecc">Onboarding Process</label>
+     <input type="checkbox"
+     id="onboarding-prosecc"
+     name="onboarding-prosecc"
+     value="onboarding-prosecc"/>
+
+     <label for="time-tracking">Time Tracking</label>
+     <input type="checkbox"
+     id="time-tracking"
+     name="time-tracking"
+     value="time-tracking"/>
+
+     <label for="virtual-meetings">Virtual Meetings</label>
+     <input type="checkbox"
+     id="virtual-meetings"
+     name="virtual-meetings"
+     value="virtual-meetings"/>
+
+     <label for="feedback-and-reviews">Feedback & Reviews</label>
+     <input type="checkbox"
+     id="feedback-and-reviews"
+     name="feedback-and-reviews"
+     value="feedback-and-reviews"/>
+   </fieldset>
+
+   <label for="comment">Any thoughts or recommendations?</label>
+   <textarea id="comment"
+   name="comment">Enter your comment here...</textarea>
+   <button id="submit" type="submit">Submit</button>
+</form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
