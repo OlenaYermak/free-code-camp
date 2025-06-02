@@ -1,0 +1,47 @@
+body{
+  background-color: rgb(188, 109, 188);
+}
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  background-color: pink;
+  max-width:60%;
+  padding:40px;
+}
+.title {
+  text-align: center;
+}
+
+.todo-list{
+  list-style: none;
+}
+
+
+
+.todo-list-item{
+  background-color:beige;
+  padding:20px;
+  margin-top:20px;
+  border-radius:8px;
+}
+
+.sub-item-link:hover{
+  color: red;
+  
+}
+
+a{
+  text-decoration: none;
+}
+.sub-item-link:active{
+  color:green;
+}
+
+.sub-item-link:visited{
+  color:purple;
+}
+
+.sub-item-link:focus{
+  outline: 2px solid #007BFF; 
+  outline-offset: 2px;
+}
