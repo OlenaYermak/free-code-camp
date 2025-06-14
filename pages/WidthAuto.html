@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Приклад width: auto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Block element */
+    .block {
+      background-color: #d0e6f8;
+      border: 2px solid #005ea8;
+      padding: 10px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Inline-block element */
+    .inline-block {
+      display: inline-block;
+      background-color: #f8d0d0;
+      border: 2px solid #a80000;
+      padding: 10px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Flex container */
+    .flex-container {
+      display: flex;
+      gap: 10px;
+      background-color: #e6f8d0;
+      padding: 10px;
+      border: 2px solid #4e8a00;
+      margin-bottom: 20px;
+    }
+
+    .flex-item {
+      background-color: #b4f88c;
+      border: 2px solid #357a00;
+      padding: 10px;
+      width: auto;
+    }
+
+    /* Grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      background-color: #f8f1d0;
+      padding: 10px;
+      border: 2px solid #a87800;
+    }
+
+    .grid-item {
+      background-color: #f8e1b4;
+      border: 2px solid #a86e00;
+      padding: 10px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Block element (width: auto)</h2>
+  <div class="block">
+    Це блочний елемент. Його ширина автоматично підлаштовується під ширину контейнера.
+  </div>
+
+  <h2>Inline-block element (width: auto)</h2>
+  <span class="inline-block">
+    Це inline-block елемент. Його ширина дорівнює ширині вмісту + padding.
+  </span>
+
+  <h2>Flex container (width: auto для flex item)</h2>
+  <div class="flex-container">
+    <div class="flex-item">Flex item 1 (короткий текст)</div>
+    <div class="flex-item">Flex item 2 (довший текст для демонстрації поведінки)</div>
+  </div>
+
+  <h2>Grid container (width: auto для grid item)</h2>
+  <div class="grid-container">
+    <div class="grid-item">Grid item 1 (короткий текст)</div>
+    <div class="grid-item">Grid item 2 (довший текст для демонстрації поведінки)</div>
+  </div>
+
+</body>
+</html>
